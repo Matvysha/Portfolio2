@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main_section {
+    height: 700px;
+    background: #EEEFF1;
+}
+    /*  Заголовок */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_li {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+    margin-right: 42px;
+}
+
+.logo, .header_menu {
+    display: inline-block;
+}
+
+.header_li a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.header_li :hover {
+    background-color: #34547A;
+    transition: 0.7s;
+}
+
+.logo {
+    position: relative;
+    top: 57px;
+}
+    /*  Левая часть */
+.left-wrapper {
+    position: relative;
+    top: 165px;
+    left: 105px;
+}
+   /*  Правая часть */
+.right-wrapper {
+    position: relative;
+    left: 600px;
+    top: -70px;
+}
+
+.right-item {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+}
+
+.right-text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.right-btn {
+    margin-top: 60px;
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+}
+
+   /*  Вторая секция */
+.second-section {
+    height: 200px;
+}
+
+.second-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.second-item {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.second-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 50px;
+}
+    /* Третья секция */
+.third-section  {
+    background: #EEEFF1;
+    height: 1004px;
+}
+
+.third-text {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.third-item {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.third-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 50px;
+}
+
+.video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 180px;
+    left: 10px;
+}
+
+/* Четвертая секция */
+
+.four-section {
+    height: 500px;
+}
+
+.four-text {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.four-item {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.four-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 50px;
+}
+
+.four-btn {
+    position: relative;
+    top: 90px;
+    left: 445px;
+    margin-top: 60px;
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+}
+
+   /*  футер */
+
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #3586ff;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}    
